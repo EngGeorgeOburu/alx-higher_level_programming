@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import sys
 
-if __name__ ==  "__main__":
+if __name__ == "__main__":
     # sys.argv[0] is the script name
     name_script = sys.argv[0]
 
