@@ -9,6 +9,6 @@ def add_tuple(tuple_a=(), tuple_b=()):
     if len(tuple_b) >= 2:
         b1, b2 = tuple_b[:2]  # Extract the first two elements
     else:
-        b1, b2 = 0, 0  # Default values if the length
+        b1, b2 = 0, 0  # Default values if the length is < 2
     # Return the results of the corresponding elements
     return (a1 + b1, a2 + b2)
