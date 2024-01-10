@@ -13,4 +13,3 @@ def search_replace(my_list, search, replace):
             new_list.append(replace)
     """ Return the new list with replacement """
     return new_list
-
