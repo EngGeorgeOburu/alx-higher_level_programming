@@ -2,10 +2,10 @@
 def search_replace(my_list, search, replace):
     """ Create an empty list tostore the results"""
     new_list = []
-    """ Iterate through each element in the original list"""    
+    """ Iterate through each element in the original list"""
     for element in my_list:
         """ Check if the element is equal to search element"""
-        if element == search:
+        if new_list == search:
             """ If yes, append the replacement element to the new list"""
             new_list.append(replace)
         else:
