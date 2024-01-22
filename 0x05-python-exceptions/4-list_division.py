@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 def list_division(my_list_1, my_list_2, list_length):
-    i = 0
-    new_list = 0
-    div_result = 0
+    """ Initialize new list to store new variables """
+    new_list = []
+    """ Iterate through the range of list length """
     for i in range(list_length):
         try:
             div_result = (my_list_1[i] / my_list_2[i])

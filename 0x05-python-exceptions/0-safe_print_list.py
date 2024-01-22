@@ -10,5 +10,6 @@ def safe_print_list(my_list=[], x=0):
     except IndexError:
         """ Handle the case when index is out of range """
         pass
+    """ Print a new line """
     print()
     return elements_to_print
