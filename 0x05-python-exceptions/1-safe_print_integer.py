@@ -3,11 +3,11 @@
 
 
 def safe_print_integer(value):
-    """ Try to execute the following blockof code """
+    """Try to execute the following blockof code"""
     try:
-        """ Print the formatted interger value """
+        """Print the formatted interger value"""
         print("{:d}".format(value))
         return True
-    """ Handle the ValueError exception """
+    """Handle the ValueError exception"""
     except (ValueError, TypeError):
         return False
