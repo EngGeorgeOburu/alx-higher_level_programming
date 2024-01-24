@@ -6,6 +6,7 @@
 class Square:
     """A class representing a square."""
 
+
     def __init__(self, size):
         """
         Initialize a new instance of the Square class.
@@ -13,5 +14,4 @@ class Square:
         Args:
             size (int): The size of the square.
         """
-        self._size = size
-        """self._size = None"""
+        self.__size = size
