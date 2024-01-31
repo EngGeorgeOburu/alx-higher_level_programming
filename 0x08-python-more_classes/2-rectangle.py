@@ -62,16 +62,16 @@ class Rectangle:
         return self._height
 
     @height.setter
-    """
-    Sets the height of the rectangle
-    Args:
-    value (int): The new height value.
-    Raises:
-    TypeError:if value is not integer
-    ValueError: if value is less than 0
-    """
-
     def height(self, value):
+        """
+        Sets the height of the rectangle
+         Args:
+        value (int): The new height value.
+         Raises:
+         TypeError:if value is not integer
+         ValueError: if value is less than 0
+        """
+
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         elif value < 0:
