@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+This module inherits methods and attributes from BaseGeometry class
+"""
+
 
 class BaseGeometry:
     """ Base class representing geometrical operations."""
