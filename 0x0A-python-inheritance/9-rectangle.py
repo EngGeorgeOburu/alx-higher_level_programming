@@ -1,4 +1,13 @@
 #!/usr/bin/python3
+"""
+Module: 9-rectangle
+
+This module defines classes for representing geametric shapes.
+Classes:
+    BaseGeometry: Base class for geometry-related classes.
+    Rectangle: Class representing a rectangle.
+"""
+
 
 class BaseGeometry:
 
@@ -10,6 +19,8 @@ class BaseGeometry:
             raise TypeError("{} must be an integer".format(name))
         elif value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
+
+
 class Rectangle(BaseGeometry):
     def __init__(self, width, height):
         self.__width = 0
@@ -18,7 +29,9 @@ class Rectangle(BaseGeometry):
         self.__integer_validator("height", height)
         self.__width = width
         self.__height = height
+
     def area(self):
-        return self.__width *self.__height
+        return self.__width * self.__height
+
     def __str__():
         return "[Rectangle] {}/{}".format(self.__width, self.__height)
