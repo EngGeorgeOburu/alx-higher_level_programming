@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 
+"""
+This module provides utility functions for perfoming lookups on objects.
+"""
+
+
 def lookup(obj):
     """
     Returns the list of attributes and methods of an object
