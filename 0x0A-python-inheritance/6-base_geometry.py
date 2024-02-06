@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+This module defines a class with BaseGeometry properties.
+"""
+
 
 class BaseGeometry:
     """
