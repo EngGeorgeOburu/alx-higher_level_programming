@@ -3,6 +3,7 @@
 Module: 9-rectangle
 
 This module defines classes for representing geametric shapes.
+
 Classes:
     BaseGeometry: Base class for geometry-related classes.
     Rectangle: Class representing a rectangle.
@@ -37,7 +38,8 @@ class BaseGeometry:
             TypeError: If value not integer
             ValueError: If value is less than 0
         """
-        raise TypeError("{} must be an integer".format(name))
+        if not isinstance(value, int):
+            raise TypeError("{} must be an integer".format(name))
         elif value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
 
@@ -62,8 +64,8 @@ class Rectangle(BaseGeometry):
         """
         self.__width = 0
         self.__height = 0
-        self.__integer_validator("width", width)
-        self.__integer_validator("height", height)
+        super().__integer_validator("width", width)
+        super().__integer_validator("height", height)
         self.__width = width
         self.__height = height
 
