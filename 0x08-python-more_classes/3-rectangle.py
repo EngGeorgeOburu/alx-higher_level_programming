@@ -66,9 +66,9 @@ class Rectangle:
         Sets the height of the triangle.
         Args:
             value (int): The new height value.
-            Raises:
-                TypeError: If value is not an integer.
-                ValueError: If value is negative.
+        Raises:
+            TypeError: If value is not an integer.
+            ValueError: If value is negative.
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
@@ -94,11 +94,10 @@ class Rectangle:
 
     def __str__(self):
         """
-        Returns a string represemtatio.
+        Returns a string represemtation.
         Returns:
             str: A tring As string representation of the rectangle.
         """
         if self._width == 0 or self._height == 0:
             return ""
-        return (('#' * self._width + "\n")*self._height)[:-1]
-    
+        return (('#' * self._width + "\n")*self._height)[:-1]    
