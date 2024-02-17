@@ -21,6 +21,7 @@ class Rectangle:
             width (int): The width of the new rectangle
             height (int): The height of the new rectangle
         """
+        type(self).number_of_instances += 1
         self.width = width
         self.height = height
 
@@ -80,11 +81,11 @@ class Rectangle:
         Raises:
             TypeError:If rect_1 or rect_2 is not a triangle
         """
-        if not isinstance(rect_1, rectangle):
+        if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of a rectangle")
-        if not isinstance(rect_2, rectangle):
+        if not isinstance(rect_2, Rectangle):
             raise TypeError("rect_2 must be an instance of a rectangle")
-        if rect_1() >= rect_2():
+        if rect_1.area() >= rect_2.area():
             return (rect_1)
         return (rect_2)
 
@@ -110,19 +111,19 @@ class Rectangle:
             [rect.append(str(self.print_symbol)) for j in range(self.__width)]
             if i != self.__height - 1:
                 rect.append("\n")
-            return ("".join(rect))
+        return ("".join(rect))
 
-        def __repr__(self):
-            """
-            Returns the string representation of the Rectangle.
-            """
-            rect = "Rectangle(" + str(self.__width)
-            rect += ", " + str(self.__height) + ")"
-            return (react)
+    def __repr__(self):
+        """
+        Returns the string representation of the Rectangle.
+        """
+        rect = "Rectangle(" + str(self.__width)
+        rect += ", " + str(self.__height) + ")"
+        return (rect)
 
-        def __del__self(self):
-            """
-            Prints a message for every deletion.
-            """
-            type(self).number_of_instances -= 1
-            print("Bye rectangle...")
+    def __del__self(self):
+        """
+        Prints a message for every deletion.
+        """
+        type(self).number_of_instances -= 1
+        print("Bye rectangle...")
