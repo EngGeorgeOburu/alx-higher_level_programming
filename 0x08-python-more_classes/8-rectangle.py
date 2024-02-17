@@ -148,11 +148,3 @@ class Rectangle:
         if Area1 >= Area2:
             return rect_1
         return rect_2
-        print("Bye rectangle...")
-    
-#    del __del__(self):
-        #"""
-       # Prints a message for each deletion.
-        #"""
-        #type(self).number_of_instance -= 1
-        #printprint("Bye rectangle...")
