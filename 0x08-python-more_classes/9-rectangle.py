@@ -121,7 +121,7 @@ class Rectangle:
         rect += ", " + str(self.__height) + ")"
         return (rect)
 
-    def __del__self(self):
+    def __del__(self):
         """
         Prints a message for every deletion.
         """
