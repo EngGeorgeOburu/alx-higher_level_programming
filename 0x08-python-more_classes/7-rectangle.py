@@ -20,6 +20,13 @@ Methods:
 
 
 class Rectangle:
+    """ class representing rectangle.
+    Attributes:
+        number_of_instances (int): A class attribute to keep track of the
+            number of Rectangle instances created.
+        print_symbol (str): A class attribute representing the symbol used
+            for printing the rectangle.
+    """
     number_of_instances = 0
     print_symbol = '#'
 

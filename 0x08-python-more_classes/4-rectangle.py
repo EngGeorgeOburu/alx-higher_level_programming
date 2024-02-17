@@ -19,6 +19,7 @@ Methods:
 
 
 class Rectangle:
+    """Class representing Rectangle."""
     def __init__(self, width=0, height=0):
         """
         Initializes new rectangle instance.

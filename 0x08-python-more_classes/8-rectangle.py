@@ -22,6 +22,12 @@ Methods:
 
 
 class Rectangle:
+    """
+    Class Representing the rectangle.
+    Attributes:
+        number_of_instances:The number of instances of rectangle created
+        print_symbol: The symbol used to print the rectangle.
+    """
     number_of_instances = 0
     print_symbol = '#'
 
