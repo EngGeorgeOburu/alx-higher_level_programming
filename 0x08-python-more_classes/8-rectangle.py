@@ -117,16 +117,31 @@ class Rectangle:
             str : string rep ofthe rectangle
         """
         if self._width == 0 or self._heigh == 0:
-            return ""
+            return ("")
+
+        rect = []
+        for i in range(self.__height):
+            [rect.append(str(self.print_symbo)) for j in range(self._-width)]
+            if i != self.__height - 1:
+                rect.append("\n")
+            return ("".join(rect))
         sys = str(self.print_symbol)
         return ((sys*self._width + "\n")*self._width)
 
     def __repr__(self):
         """
-        Decreases the number of instances when reactgnle is deleted
+        Returns the string representation of the rectange.
         """
-        Rectangle.number_of_instances -= 1
-        print("By rectangle...")
+        rect = "Rectangle(" + str(self.__width)
+        rect += ", " + str(self.__height) + ")"
+        return (rect)
+
+    def __del__(self):
+        """
+        Prints a message for every deletion of a rectangle.
+        """
+        type(self).number_of_instances -= 1
+        print("Bye rectangle...")
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
