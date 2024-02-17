@@ -29,12 +29,10 @@ class Rectangle:
         self._height = height
 
     @property
-    """
-    Gets the width of rectangle.
-    Returns:
-        int: The width of the rectangle.
-    """
     def width(self):
+        """
+        Gets the width of the rectangle.
+        """
         return self._width
 
     @width.setter
@@ -54,12 +52,12 @@ class Rectangle:
         self._width = value
 
     @property
-    """
-    Gets the height of the rectangle
-    Returns:
-        int: The height of the rectangle.
-    """
     def height(self):
+        """
+        Gets the height of the rectangle.
+        Returns:
+            int: The height of the rectangle.
+        """
         return self._height
 
     @height.setter
