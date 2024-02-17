@@ -95,7 +95,7 @@ class Rectangle:
     def __str__(self):
         """
         Returns a string represemtatio.
-        Returs:
+        Returns:
             str: A tring As string representation of the rectangle.
         """
         if self._width == 0 or self._height == 0:
