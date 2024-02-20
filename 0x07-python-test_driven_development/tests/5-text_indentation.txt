@@ -1,0 +1,37 @@
+________________________________
+How to use 5-text_indentation.py
+________________________________
+
+>>> text_indentation = __import__(`5-text_indentation`).text_indentation
+
+Usage:
+    >>> t=" : . ? "
+Output:
+>>> t="Hello. : \nI am a string?.\n"
+
+t = :
+
+>>> t=" : . ?"
+
+Errors:
+
+If string is empty:
+>>> text_indentation()
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+If there is more than one string
+>>> text_indentation("hell", "owo", "rld")
+Traceback (most recent call last)
+TypeError: text_indentation() takes 1 positional argument but 3 were provided
+
+>>> text_indentation(19)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation()
+Traceback (most recwnt call last)
+TypeError: text_indentation() missing 1 needed positional argument: 'text'
+
+>>> text_indentation("Georgeisawesome.")
+Georgeisawesome.
