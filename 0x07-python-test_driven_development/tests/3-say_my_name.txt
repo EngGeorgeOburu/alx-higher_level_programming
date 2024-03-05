@@ -12,7 +12,7 @@ My name is George Oburu
 
 Say my name with space
 >>> say_my_name("George")
-My name is George
+'My name is George\n'
 
 Errors with integers with my name
 >>> say_my_name(1, "I")
@@ -20,7 +20,7 @@ Traceback (most recent call last):
 TypeError: first_name must be a string
 
 Errors with last name as my name
->>> say_my_name('Gustavo", [4, 5, 6])
+>>> say_my_name('Gustavo', [4, 5, 6])
 Traceback (most recent call last):
 TypeError: last_name must be a string
 
