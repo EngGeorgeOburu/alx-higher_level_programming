@@ -1,7 +1,15 @@
 #!/usr/bin/python3
 
+"""
+    Script that lists all states from the database hbtn_0e_0_usa
+    starting with N
+    User args given are username, password and database
+"""
+
+
 import MySQLdb
 import sys
+
 
 if __name__ == "__main__":
     conn = MySQLdb.connect (
