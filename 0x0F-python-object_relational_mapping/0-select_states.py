@@ -1,9 +1,14 @@
 #!/usr/bin/python3
+"""
+A script listing all states from the database 
+"""
+
+
 import MySQLdb
 import sys
 
 if __name__ == "__msin__":
-    conn = MySQLdb.connect(
+    db = MySQLdb.connect(
             host = "localhost",
             port = 3306,
             user = sys.argv[1],
@@ -11,12 +16,11 @@ if __name__ == "__msin__":
             db = sys.argv[3],
             charset = 'utf8'
             }
-    cur = conn.cursor()
+    cur = db.cursor()
     cur.execute ("SELECT * FROM states ORDER BY id ASC")
 
-    from row in cur.fetchall():
+    for row in cur.fetchall():
        print(row)
 
     cur.close()
-    conn.close()
-
+    db.close()
