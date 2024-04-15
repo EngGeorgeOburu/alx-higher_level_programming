@@ -1,11 +1,13 @@
 #!/usr/bin/python3
+
 """
-A script listing all states from the database 
+A script listing all states from the database
 """
 
 
 import MySQLdb
 import sys
+
 
 if __name__ == "__msin__":
     db = MySQLdb.connect(
