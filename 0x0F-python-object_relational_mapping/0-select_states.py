@@ -17,7 +17,7 @@ if __name__ == "__msin__":
             passwd = sys.argv[2],
             db = sys.argv[3],
             charset = 'utf8'
-            }
+            )
     cur = db.cursor()
     cur.execute ("SELECT * FROM states ORDER BY id ASC")
 
