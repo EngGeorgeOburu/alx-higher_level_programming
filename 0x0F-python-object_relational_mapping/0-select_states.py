@@ -4,9 +4,8 @@
 A script listing all states from the database
 """
 
-
-import MySQLdb
 import sys
+import MySQLdb
 
 
 if __name__ == "__msin__":
