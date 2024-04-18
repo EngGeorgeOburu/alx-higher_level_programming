@@ -4,8 +4,8 @@
 A script listing all states from the database
 """
 
-import sys
 import MySQLdb
+from sys import argv
 
 
 if __name__ == "__main__":
