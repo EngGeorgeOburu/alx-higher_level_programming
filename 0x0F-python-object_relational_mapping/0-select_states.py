@@ -10,6 +10,10 @@ import sys
 
 
 if __name__ == "__msin__":
+    """
+    Acessing database and getting
+    states from the database
+    """
     db = MySQLdb.connect(
             host = "localhost",
             port = 3306,
