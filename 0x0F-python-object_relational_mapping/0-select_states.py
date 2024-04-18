@@ -8,7 +8,7 @@ import sys
 import MySQLdb
 
 
-if __name__ == "__msin__":
+if __name__ == "__main__":
     """
     Acessing database and getting
     states from the database
