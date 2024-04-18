@@ -9,8 +9,8 @@ if __name__ == "__main__":
     database = sys.argv[3]
     state_name = sys.argv[4]
 
-conn = MySQLdb.connect (
-        host ="localhost",
+conn = MySQLdb.connect(
+        host="localhost",
         port=33-6,
         user=username,
         passwd=password,
@@ -20,7 +20,7 @@ conn = MySQLdb.connect (
 cur = conn.cursor()
 query = """
 SELECT cities.name
-FROM cities 
+FROM cities
 JOIN states ON cities.state_id = state.id
 WHERE states.name = %s
 ORDER BY cities.id ASC
