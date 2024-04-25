@@ -16,10 +16,10 @@ def find_peak(list_of_integers):
         return max(list_of_integers)
 
     midd = int(size/2)
-    peak = list_of_integers[mid]
-    if peak > list_of_intgers[mid - 1] and peak > list_of_integers[mid + 1]:
+    peak = list_of_integers[midd]
+    if peak > list_of_integers[midd - 1] and peak > list_of_integers[midd + 1]:
         return peak
-    elif peak < list_of_integers[mid - 1]:
-        return find_peaj(list_of_intgers[:mid])
+    elif peak < list_of_integers[midd - 1]:
+        return find_peaj(list_of_intgers[:midd])
     else:
-        return find_peak(list_of_integers[mid + 1:])
+        return find_peak(list_of_integers[midd + 1:])
